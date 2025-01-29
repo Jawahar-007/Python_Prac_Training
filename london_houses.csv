@@ -1,0 +1,11 @@
+Address,Neighborhood,Bedrooms,Bathrooms,Square Meters,Building Age,Garden,Garage,Floors,Property Type,Heating Type,Balcony,Interior Style,View,Materials,Building Status,Price (£)
+78 Regent Street,Notting Hill,2,3,179,72,No,No,3,Semi-Detached,Electric Heating,High-level Balcony,Industrial,Garden,Marble,Renovated,2291200
+198 Oxford Street,Westminster,2,1,123,34,Yes,No,1,Apartment,Central Heating,High-level Balcony,Industrial,City,Laminate Flooring,Old,1476000
+18 Regent Street,Soho,5,3,168,38,No,Yes,3,Semi-Detached,Central Heating,No Balcony,Industrial,Street,Wood,Renovated,1881600
+39 Piccadilly Circus,Islington,5,1,237,53,Yes,Yes,1,Apartment,Underfloor Heating,No Balcony,Classic,Park,Granite,Renovated,1896000
+116 Fleet Street,Marylebone,4,1,127,23,No,Yes,2,Semi-Detached,Central Heating,No Balcony,Modern,Park,Wood,Old,1524000
+32 Bond Street,Notting Hill,5,2,69,69,Yes,Yes,2,Apartment,Central Heating,Low-level Balcony,Minimalist,Park,Marble,Renovated,736000
+197 Baker Street,Soho,3,3,128,24,Yes,No,2,Apartment,Electric Heating,Low-level Balcony,Classic,Sea,Laminate Flooring,Old,1194666
+86 Fleet Street,Kensington,5,2,130,88,Yes,No,1,Apartment,Electric Heating,No Balcony,Minimalist,City,Laminate Flooring,Renovated,1646666
+9 Park Lane,Greenwich,5,1,76,2,No,Yes,3,Apartment,Electric Heating,Low-level Balcony,Classic,Sea,Laminate Flooring,New,506666
+50 Strand,Kensington,4,2,59,79,No,No,3,Semi-Detached,Gas Heating,No Balcony,Classic,Street,Wood,Old,896799
