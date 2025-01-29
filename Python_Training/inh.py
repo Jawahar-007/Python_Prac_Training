@@ -1,4 +1,5 @@
 class Transport:
+    insured = "insured"
     def __init__(self,cusname,cost,insured,type):
         self.cusname = cusname    
         self.cost = cost
@@ -8,7 +9,9 @@ class Transport:
     def test(self,model):
         return f"{self.cusname} has opted {model} for Test Drive"
     
-    # def sales(self,)
+    def sales(self,model):
+
+        return f"{self.cusname} has opted {model} for Sales"
 
 class Car(Transport):
     def accelerate(self):
