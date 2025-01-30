@@ -13,6 +13,8 @@ class Transport:
 
         return f"{self.cusname} has opted {model} for Sales"
 
+    def 
+
 class Car(Transport):
     def accelerate(self):
         return f"{self.cusname} has opted for driven for test Drive"
