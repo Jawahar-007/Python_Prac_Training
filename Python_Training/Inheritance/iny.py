@@ -17,7 +17,7 @@ class Animal:
         print(f"{self.name} is sleeping")
 
 class Dog(Animal):
-    def spqeak(self):
+    def speak(self):
         return "WOOF!"
 
 class Snail(Animal):

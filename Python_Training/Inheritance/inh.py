@@ -14,8 +14,11 @@ class Transport:
         return f"{self.cusname} has opted {model} for Sales"
 
 class Car(Transport):
+    def __init__():
+        pass
     def accelerate(self):
         return f"{self.cusname} has opted for driven for test Drive"
     
 testCar1 = Car()
+
 print(testCar1.accelerate("Ram",))

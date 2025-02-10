@@ -1,14 +1,17 @@
-from datetime import date, timedelta
+from datetime import datetime,date, timedelta
 
 class TrainTicket:
-    def __init__(self, cus_name, book_amt, dep_time, book_time, cancel_time):
+    def __init__(self, cus_name, book_amt, dep_date, book_date, cancel_date):
         self.cus_name = cus_name
         self.book_amt = book_amt
-        self.dep_time = dep_time
-        self.book_time = book_time
-        self.cancel_time = cancel_time
+        self.dep_date = dep_date
+        self.book_date = book_date
+        self.cancel_date = cancel_date
         print(f"Initialized TrainTicket for {self.cus_name}: Booked on {self.book_time}, Departure on {self.dep_time}, Cancelled on {self.cancel_time}")
     
+    def booking_module(self,):
+        print("Welcome to the Booking Section of LocoTez ")
+        bok_date = 
     def calculate_refund(self):
         print(f"Calculating refund for {self.cus_name}...")
         days_diff = (self.dep_time - self.cancel_time).days
@@ -42,11 +45,49 @@ class TrainTicket:
 
         print("Invalid cancellation date.")
         return "Invalid cancellation date."
+    
+def datechecker(self,input_date):
+    date_formats = ["%Y-%m-%d","%m-%d-%Y","%d-%m-%Y"]
+        
+    for date_format in date_formats:
+        try:
+            date_obj = datetime.strptime(input_date,date_format).date()
+            break
+        except ValueError:
+            pass
+    if date_obj:
+        return date_obj
+    else:
+        return "Invalid Date Format. Try for the date format(DD-MM-YYYY)"
+
 
 # Testing the logic
 today = date.today()
-print("Today :", today)
+print("Today Date:", today)
+
+#ticket1 = TrainTicket(cusName, 2000, today, today - timedelta(7), today - timedelta(5))
 
 # Example ticket
-ticket1 = TrainTicket('Rogan', 2000, today, today - timedelta(7), today - timedelta(5))
+cusName = input("Enter Passenger Name: ") #Input of Cusname
+
+while(True):
+    ch = input(""" Welcome To LocoTez
+               Press 
+                    1. Booking 
+                    2. Cancel Booking
+                    3. Exit """)
+    
+    match ch:
+        case '1':
+            dep_date_string = input("Enter the departure date of Train: ")
+            dep_date = datechecker(dep_date_string)
+            book_date_string = input("Enter the booking date for the Journey of Train at ",dep_date_string)
+            book_date = datechecker(book_date_string)
+            booking_List = [dep_date,book_date]
+
+
+
+
+
+
 print(ticket1.calculate_refund())
