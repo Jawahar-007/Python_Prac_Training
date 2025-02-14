@@ -11,7 +11,7 @@ class TrainTicket:
     
     def booking_module(self,):
         print("Welcome to the Booking Section of LocoTez ")
-        bok_date = 
+        
     def calculate_refund(self):
         print(f"Calculating refund for {self.cus_name}...")
         days_diff = (self.dep_time - self.cancel_time).days

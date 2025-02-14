@@ -3,7 +3,7 @@ import array as arr
 def find_indices(lst, target):
     #Dictionary to store the number and its index
     num_map = {}
-    result = []
+    result = arr.array('i',[])
     for i, num in enumerate(lst):
         print("Debug: Iteration", i, "- Current number:", num)
         complement = target - num 
@@ -11,7 +11,8 @@ def find_indices(lst, target):
         if complement in num_map:   
             for index in num_map[complement]:
                 print("Debug: Found complement at index", index, "Pair:", [index, i])
-                result.append([index,i])
+                result.append(index)
+                result.append(i)
 
         if num in num_map:
             num_map[num].append(i)
@@ -31,4 +32,7 @@ target = int(input("Enter the target number should be received after added: "))
 
 print("Type of num got array: ",type(num))
 
-print("Indices : ",find_indices(num,target) ,"\n Type of result : " , type(find_indices(num,target)))
+print("Indices : ",list(find_indices(num,target)) ,"\n Type of result : " , type(find_indices(num,target)))
+
+# [6,3,1,4,2]
+# 6+ 1 = 7
