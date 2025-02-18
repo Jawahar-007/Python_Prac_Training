@@ -28,6 +28,7 @@ def display_array_and_list(input_list):
     array_data.reverse()
     #Removing excessive number 1 in the list ; Should pass some args in remove()
     array_data.remove(1)
+    array_data.pop()
     
     # Displaying results
     print("Original List:", input_list)

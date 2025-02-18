@@ -46,8 +46,8 @@ class TrainTicket:
         print("Invalid cancellation date.")
         return "Invalid cancellation date."
     
-def datechecker(self,input_date):
-    date_formats = ["%Y-%m-%d","%m-%d-%Y","%d-%m-%Y"]
+def datechecker(input_date):
+    date_formats = ["%Y-%m-%d","%m-%d-%Y","%d-%m-%Y","%d/%m/%Y"]
         
     for date_format in date_formats:
         try:
