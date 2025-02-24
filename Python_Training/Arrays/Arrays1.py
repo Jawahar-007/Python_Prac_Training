@@ -38,6 +38,9 @@ def display_array_and_list(input_list):
     print("Sliced Array [5:]:", sliced_array2.tolist())
     print("Reversed Array:", array_data.tolist())
 
+input2_array  = list(map(int,input("Enter the array number leaving spaces in a line: ").split()))
+print("Array input 2: ", input2_array)
 # Input and function call
 input_list1 = [-1, 1, -2, 3, -4, 5, 5, -3, 1]
+
 display_array_and_list(input_list1)

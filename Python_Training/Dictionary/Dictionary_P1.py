@@ -1,36 +1,24 @@
-# Creating a dictionary
-my_dict = {'name': 'Alice', 'age': 25, 'city': 'New York'}
-
-# 1. Adding items
+my_dict = {'name':'AA','age':23,'city':'San Francisco'}
 my_dict['job'] = 'Engineer'
-print("After adding an item:", my_dict)
-
-# 2. Removing items
-my_dict.pop('age')  # Removes key 'age'
-print("After removing an item:", my_dict)
-
-# 3. Updating values
-my_dict['city'] = 'San Francisco'
-print("After updating a value:", my_dict)
-
-# 4. Merging dictionaries
-new_dict = {'country': 'USA', 'hobby': 'Reading'}
+print("\n Added category in dictionary: ",my_dict)
+my_dict.pop('age')
+print("After Popping the [age]: ",my_dict)
+my_dict['city'] = 'New York'
+print("Updated dictionary of [city]: ",my_dict)
+new_dict = {'country':'USA','hobby':'Dancing'}
 my_dict.update(new_dict)
-print("After merging dictionaries:", my_dict)
+print("\nMerging the dictionaries: ",my_dict)
 
-# 5. Accessing keys, values, and items
-print("Keys:", my_dict.keys())
-print("Values:", my_dict.values())
-print("Items:", my_dict.items())
+print("\nAccessing the dicts keys: ",my_dict.keys())
+print("\n Accessing the dict values: ",my_dict.values())
+print("\n Accesing the dict items: ", my_dict.items())
 
-# 6. Filtering a dictionary (e.g., keeping only items with string values)
-filtered_dict = {k: v for k, v in my_dict.items() if isinstance(v, str)}
-print("Filtered dictionary (only strings):", filtered_dict)
+my_dict['height'] = 18.6
+filtered_dict = {k:v for k,v in my_dict.items() if isinstance (v,float)}
+print(filtered_dict)
+my_dict.pop('height')
 
-# 7. Sorting a dictionary by keys
 sorted_dict = dict(sorted(my_dict.items()))
-print("Dictionary sorted by keys:", sorted_dict)
-
-# Sorting a dictionary by values
-sorted_by_values = dict(sorted(my_dict.items(), key=lambda item: item[1]))
-print("Dictionary sorted by values:", sorted_by_values)
+print("\n Dictionary sorted with keys: ",sorted_dict)
+sorted_by_values = dict(sorted(my_dict.items(),key= lambda item:item[1]))
+print("\n Dictionary sorted by values: by string",sorted_by_values)
